@@ -13,7 +13,9 @@
   width: 100%;
 
   @include vp-1279 {
-    &.nav__panel--visible {
+    display: none;
+
+    &--visible {
       display: flex;
       flex-direction: column;
       position: absolute;

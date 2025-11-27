@@ -1,0 +1,23 @@
+mixin diplomas()
+  section.diplomas
+    .container
+      h2.visually-hidden Мои дипломы
+      .diplomas__swiper
+        ul.diplomas__list.swiper-wrapper
+          li.diplomas__item.swiper-slide
+            a.diplomas__link(href="#")
+              img(src="./img/slides/diploma.jpg", alt="Диплом", width="309", height="235")
+          li.diplomas__item.swiper-slide
+            a.diplomas__link(href="#")
+              img(src="./img/slides/diploma.jpg", alt="Диплом", width="309", height="235")
+          li.diplomas__item.swiper-slide
+            a.diplomas__link(href="#")
+              img(src="./img/slides/diploma.jpg", alt="Диплом", width="309", height="235")
+          li.diplomas__item.swiper-slide
+            a.diplomas__link(href="#")
+              img(src="./img/slides/diploma.jpg", alt="Диплом", width="309", height="235")
+      .diplomas__controls
+        button.diplomas__button.diplomas__button--prev(type="button")
+          span.visually-hidden Предыдущий слайд
+        button.diplomas__button.diplomas__button--next(type="button")
+          span.visually-hidden Следующий слайд

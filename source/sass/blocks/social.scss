@@ -1,0 +1,55 @@
+.social {
+  display: flex;
+  gap: 14px;
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+
+  &__link {
+    border-radius: 50%;
+    border: 1px solid #857367;
+    display: block;
+    width: 28px;
+    height: 28px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #857367;
+
+    &--whatsapp {
+      background-image: url("../img/icon/wh-2.png");
+
+      &:hover {
+        background-image: url("../img/icon/wh.png");
+      }
+    }
+
+    &--instagram {
+      background-image: url("../img/icon/inst-2.png");
+
+      &:hover {
+        background-image: url("../img/icon/inst.png");
+      }
+    }
+
+    &--vk {
+      background-image: url("../img/icon/vk-2.png");
+
+      &:hover {
+        background-image: url("../img/icon/vk.png");
+      }
+    }
+
+    &--tg {
+      background-image: url("../img/icon/tg-2.png");
+
+      &:hover {
+        background-image: url("../img/icon/tg.png");
+      }
+    }
+
+    &:hover {
+      background-color: #857367;
+    }
+  }
+}

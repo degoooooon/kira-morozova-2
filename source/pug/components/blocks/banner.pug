@@ -1,0 +1,10 @@
+mixin banner()
+  section.banner
+    .banner__bc
+      picture
+        source(srcset="./img/banner.webp, ./img/banner@2x.webp 2x", type="image/webp")
+        img(src="./img/banner.jpg", srcset="./img/banner@2x.jpg 2x" alt="" loading="lazy" decoding="async" width="1920" height="703")
+    .container
+        h1.banner__title Морозова Кира
+        p.banner__description психологическое консультирование  и психокоррекция очно и онлайн
+        button.banner__btn(type="button") Записаться на прием

@@ -1,0 +1,29 @@
+mixin footer()
+  footer.footer
+    .contacts(id="contacts")
+      .container
+        h2.contacts__title Мои контанты
+        .contacts__wrapper
+          .contacts__phone
+            a(href="tel:+78652560789" aria-label="Позвонить по номеру +7 (8652) 56-07-89+7 (8652) 56-07-89") +7 (8652) 56-07-89
+          .contacts__mail
+            a(href="mailto:morozovak84@mail.ru" aria-label="Написать письмо на адрес morozovak84@mail.rumorozovak84@mail.ru") morozovak84@mail.ru
+          ul.contacts__list
+            li.contacts__item
+              a.contacts__link.contacts__link--whatsapp(href="#")
+                span.visually-hidden Ватсап
+            li.contacts__item
+              a.contacts__link.contacts__link--instagram(href="#")
+                span.visually-hidden Инстаграм
+            li.contacts__item
+              a.contacts__link.contacts__link--vk(href="#")
+                span.visually-hidden Вконтакте
+            li.contacts__item
+              a.contacts__link.contacts__link--tg(href="#")
+                span.visually-hidden Телеграмм
+    .footer__bottom
+      .container
+        span.footer__copy &copy; 2025
+        a.footer__policy(href="#") Политика конфиденциальности | Карта сайта
+        a.footer__sitemap(href="#") Создание сайта
+          img(src="./" alt="")

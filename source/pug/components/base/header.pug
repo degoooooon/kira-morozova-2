@@ -1,0 +1,60 @@
+mixin header(headerMods, currentUrl)
+  -
+    const headerLinks = [
+      {
+        href: "#about",
+        text: "Обо мне"
+      },
+      {
+        href: "#services",
+        text: "Услуги"
+      },
+      {
+        href: "#themes",
+        text: "Тема терапии"
+      },
+      {
+        href: "#experience",
+        text: "Мой опыт"
+      },
+      {
+        href: "#contacts",
+        text: "Контакты"
+      },
+    ]
+
+  header.header(class=headerMods)
+    .container
+      if(currentUrl === "#about")
+        //- lighthouse снимает 10 баллов SEO за <a> без href
+        span.header__logo
+          img(src="./img/logo.png", alt="Логотип", width="121", height="51")
+      else
+        a.header__logo(href="index.html", aria-label="Переход на главную")
+          img(src="./img/logo.png", alt="Логотип", width="121", height="51")
+      nav.nav
+        button.nav__toggle(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+          span
+        .nav__wrapper
+          ul.nav__list
+            each link in headerLinks
+              - const activeState = currentUrl === link.href
+              li.nav__item
+                if(activeState)
+                  span.nav__link.is-active= link.text
+                else
+                  a.nav__link(href=link.href)= link.text
+          a.nav__phone(href="tel:+78652560789", aria-label="Позвонить по номеру +7 (8652) 56-07-89") +7 (8652) 56-07-89
+        ul.social
+          li.social__item
+            a.social__link.social__link--whatsapp(href="#")
+              span.visually-hidden Ватсап
+          li.social__item
+            a.social__link.social__link--instagram(href="#")
+              span.visually-hidden Инстаграм
+          li.social__item
+            a.social__link.social__link--vk(href="#")
+              span.visually-hidden Вконтакте
+          li.social__item
+            a.social__link.social__link--tg(href="#")
+              span.visually-hidden Телеграм

@@ -99,5 +99,10 @@
     border-radius: 29px;
     cursor: pointer;
     display: block;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
   }
 }

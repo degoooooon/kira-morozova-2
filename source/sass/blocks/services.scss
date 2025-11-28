@@ -142,4 +142,9 @@
   font-family: "Roboto", sans-serif;
   height: 50px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #857367;
+    color: #ffffff;
+  }
 }

@@ -10,7 +10,10 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="description", content="ProjectName — описание")
+    meta(name="description", content="Кира Морозова - психолог, психотерапевт. Индивидуальная терапия, семейная терапия, консультации по вопросам отношений и личностного роста в Кисловодске и онлайн.")
+    //- Ключевые слова (не критично для SEO, но можно добавить)
+    meta(name="keywords", content="психолог, психотерапевт, Кисловодск, онлайн консультации, семейная терапия")
+    meta(name="author", content="Кира Морозова")
     //- генерируйте favicon тут - https://realfavicongenerator.net/
     //- в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"
     //- используйте только для шрифта находящегося на первом экране
@@ -19,20 +22,19 @@ html(lang="ru")
     if (openGraf)
       //- Обязательно измените содержание контента на тот что необходим!
       //- Введите заголовок
-      meta(property="og:title", content="Лига решений")
-      //- Введите заголовок путь к картинке
-      meta(property="og:image", content="https://24fortest.ru/img/content/sharing.png")
+      meta(property="og:title", content="Кира Морозова — психолог и психотерапевт в Кисловодске и онлайн")
       //- Введите необходимый тип
       meta(property="og:type", content="article")
       //- Введите адрес сайта
-      meta(property="og:url", content="https://24fortest.ru/")
+      meta(property="og:url", content="https://kira-morozova-2.ru/img/og-image.jpg")
       //- Введите описание
-      meta(property="og:description", content="Простые и понятные решения в помощь разработчикам от команды Лига А")
+      meta(property="og:description", content="Индивидуальная и семейная терапия в Кисловодске и онлайн. Консультации по вопросам отношений и личностного роста.")
 
     link(rel="stylesheet", href="css/style.min.css")
 
   body
     .wrapper(class=wrapperMods)
+      .overlay
       if (hasHeader)
         +header(headerMods, currentUrl)
 

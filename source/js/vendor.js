@@ -14,6 +14,7 @@ new Swiper('.diplomas__swiper', {
     1280: {
       slidesPerView: 4,
       spaceBetween: 22,
+      allowTouchMove: false
     },
     768: {
       slidesPerView: 3,

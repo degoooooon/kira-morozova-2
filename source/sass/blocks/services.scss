@@ -65,7 +65,7 @@
       max-width: 639px;
       display: grid;
       grid-template-columns: 55% 1fr;
-      height: 100%;
+      height: auto;
 
       @include vp-1279 {
         display: flex;

@@ -16,6 +16,10 @@
 
     a {
       color: #ffffff;
+
+      @include vp-767 {
+        text-align: center;
+      }
     }
   }
 }

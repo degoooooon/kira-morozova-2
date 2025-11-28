@@ -56,4 +56,8 @@ mixin services()
                 picture
                   source(srcset="./img/servis/therapy.webp, ./img/servis/therapy@2x.webp 2x", type="image/webp")
                   img(src="./img/servis/therapy.jpg", srcset="./img/servis/therapy@2x.jpg 2x", alt="Групповая терапия: участники сидят в кругу, протягивая руки к центру в знак поддержки", width="288", height="372")
+        .services__pagination
+          .services__buttons.services__buttons--active(aria-label="Слайд 1", type="button")
+          .services__buttons(aria-label="Cлайд 2", type="button")
+          .services__buttons(aria-label="Cлайд 3", type="button")
       button.services__button(type="button") Записаться на приём

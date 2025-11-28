@@ -22,7 +22,7 @@ new Swiper('.diplomas__swiper', {
     },
     320: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 20,
     }
   }
 });
@@ -41,6 +41,12 @@ function initMobileSwiper() {
       navigation: {
         nextEl: '.services__button--next',
         prevEl: '.services__button--prev',
+      },
+      pagination: {
+        el: '.services__pagination',
+        clickable: true,
+        bulletClass: 'services__buttons',
+        bulletActiveClass: 'services__buttons--active',
       },
     });
   } else if (screenWidth > 768 && swiperInstance) {

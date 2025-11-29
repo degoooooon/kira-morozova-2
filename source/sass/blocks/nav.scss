@@ -53,7 +53,7 @@
     left: 0;
     width: 32px;
     height: 2px;
-    background-color: #000;
+    background-color: #000000;
     transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease;
   }
 
@@ -69,7 +69,6 @@
     top: 22px;
   }
 
-  // состояние открыто
   &--opened {
     &::before {
       top: 15px;
@@ -107,7 +106,7 @@
   color: #4d4d4d;
   position: relative;
 
-  @media (max-width: 1180px) {
+  @include vp-1279 {
     font-size: 30px;
     line-height: 43px;
   }
@@ -137,7 +136,7 @@
   line-height: 24px;
   color: #4d4d4d;
   font-weight: 900;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   padding-left: 17px;
 
@@ -157,7 +156,7 @@
     color: #000000;
   }
 
-  @media (max-width: 1180px) {
+  @include vp-1279 {
     margin: 0 auto 20px;
   }
 }

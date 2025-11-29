@@ -73,3 +73,16 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: none;
+  z-index: 10;
+
+  &--visible {
+    display: block;
+  }
+}

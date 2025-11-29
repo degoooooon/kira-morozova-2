@@ -20,7 +20,7 @@
     text-transform: uppercase;
     color: #000000;
     font-weight: 400;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", sans-serif;
     text-align: center;
 
     @include vp-767 {

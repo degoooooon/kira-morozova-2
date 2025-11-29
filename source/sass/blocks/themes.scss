@@ -118,7 +118,7 @@
       column-count: 2;
       padding: 0 50px;
 
-      @media(max-width: 768px) {
+      @include vp-767 {
         column-count: 1;
         padding: 0;
       }

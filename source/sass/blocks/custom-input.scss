@@ -94,17 +94,16 @@
       }
     }
   }
-
-  
 }
+
 .input-message {
-    position: relative;
+  position: relative;
 
-    &.is-invalid {
-      color: #ff0000;
-    }
-
-    &.is-valid {
-      color: #15ab07;
-    }
+  &.is-invalid {
+    color: #ff0000;
   }
+
+  &.is-valid {
+    color: #15ab07;
+  }
+}

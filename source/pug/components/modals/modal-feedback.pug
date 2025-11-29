@@ -1,2 +1,16 @@
 mixin modal-feedback()
-  p.modal__description Обычная модалка
+  .modal-feedback(data-form-validate data-callback="base")
+    form.modal-form(action="#")
+      .modal-form__field(data-validate-type="text" data-required data-message-base="Введите имя")
+        label.visually-hidden(for="name") Имя
+        input#name.modal-form__control(type="text" name="name" placeholder="Введите ваше имя" minlength="2" required)
+
+      .modal-form__field(data-validate-type="phone" data-required data-message-base="Введите полный номер телефона" data-message-success="Телефон введён корректно")
+        label.visually-hidden(for="phone") Телефон
+        input#phone.modal-form__control(type="tel" name="phone" placeholder="+7 (___) ___-__-__" required inputmode="numeric")
+
+      .modal-form__field(data-validate-type="email" data-required data-message-base="Введите корректный email")
+        label.visually-hidden(for="email") Email
+        input#email.modal-form__control(type="email" name="email" placeholder="Ваша почта" required autocomplete="email")
+
+      button.modal-form__submit(type="submit") Отправить

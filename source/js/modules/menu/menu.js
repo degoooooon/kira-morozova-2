@@ -6,12 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!toggle || !panel || !overlay) return;
 
+  // Определяем iOS
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
   function closeMenu() {
     panel.classList.remove('nav__wrapper--visible');
     overlay.classList.remove('overlay--visible');
     toggle.classList.remove('nav__toggle--opened');
     toggle.setAttribute('aria-expanded', false);
-    document.body.style.overflow = '';
+
+    // 🚀 снимаем класс блокировки
+    document.body.classList.remove(isIOS ? 'scroll-lock-ios' : 'scroll-lock');
   }
 
   toggle.addEventListener('click', () => {
@@ -20,12 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.setAttribute('aria-expanded', isOpened);
     overlay.classList.toggle('overlay--visible', isOpened);
 
-    document.body.style.overflow = isOpened ? 'hidden' : '';
+    // 🚀 добавляем нужный класс
+    if (isOpened) {
+      document.body.classList.add(isIOS ? 'scroll-lock-ios' : 'scroll-lock');
+    } else {
+      document.body.classList.remove(isIOS ? 'scroll-lock-ios' : 'scroll-lock');
+    }
   });
 
   overlay.addEventListener('click', closeMenu);
 
-  //  закрываем меню при клике на любую ссылку
   links.forEach(link => {
     link.addEventListener('click', closeMenu);
   });

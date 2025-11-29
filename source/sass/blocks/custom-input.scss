@@ -95,10 +95,10 @@
     }
   }
 
-  .input-message {
-    position: absolute;
-    right: 0;
-    bottom: -5px;
+  
+}
+.input-message {
+    position: relative;
 
     &.is-invalid {
       color: #ff0000;
@@ -108,4 +108,3 @@
       color: #15ab07;
     }
   }
-}

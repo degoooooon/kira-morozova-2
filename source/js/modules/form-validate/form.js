@@ -78,6 +78,7 @@ export class Form {
       return;
     }
     if (!this._validState && callback) {
+      event.preventDefault();
       this._callbacks[callback].errorCallback(event);
       return;
     }

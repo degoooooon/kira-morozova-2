@@ -10,11 +10,11 @@
     align-items: center;
     padding: 374px 20px 93px;
 
-    @media(max-width: 1279px) {
+    @include vp-1279 {
       padding: 10% 24px;
     }
 
-    @media(max-width: 767px) {
+    @include vp-767 {
       padding: 20% 15px;
     }
   }
@@ -42,12 +42,12 @@
     margin: 0 0 50px;
     text-align: center;
     font-size: 74px;
-    letter-spacing: 0.10em;
+    letter-spacing: 0.1em;
     line-height: 65px;
     color: #ffffff;
     font-weight: 400;
     font-family: "Playfair Display", sans-serif;
-    filter: drop-shadow(0.209px 5.996px 3.5px rgba(0,0,0,0.26));
+    filter: drop-shadow(0.21px 6px 3.5px rgba(0, 0, 0, 0.26));
 
     @include vp-1279 {
       font-size: 60px;
@@ -67,9 +67,9 @@
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-align: center;
-    filter: drop-shadow(0.209px 5.996px 3.5px rgba(0,0,0,0.26));
+    filter: drop-shadow(0.21px 6px 3.5px rgba(0, 0, 0, 0.26));
     margin: 0 0 38px;
 
     @include vp-1279 {
@@ -92,7 +92,7 @@
     line-height: 15px;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-align: center;
     width: 258px;
     height: 58px;

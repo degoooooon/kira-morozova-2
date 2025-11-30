@@ -2,8 +2,9 @@
 import './vendor/swiper';
 import './vendor/focus-visible-polyfill';
 import './modules/menu/menu';
-
-new Swiper('.diplomas__swiper', {
+/* global Swiper */
+// eslint-disable-next-line
+const swiper = new Swiper('.diplomas__swiper', {
   loop: true,
   speed: 500,
   navigation: {
@@ -14,7 +15,7 @@ new Swiper('.diplomas__swiper', {
     1280: {
       slidesPerView: 4,
       spaceBetween: 22,
-      allowTouchMove: false
+      allowTouchMove: false,
     },
     768: {
       slidesPerView: 3,
@@ -23,8 +24,8 @@ new Swiper('.diplomas__swiper', {
     320: {
       slidesPerView: 1,
       spaceBetween: 20,
-    }
-  }
+    },
+  },
 });
 
 let swiperInstance;

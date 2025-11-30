@@ -84,6 +84,10 @@
       transform: rotate(-45deg);
     }
   }
+
+  @include vp-1280 {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -158,11 +162,5 @@
 
   @include vp-1279 {
     margin: 0 auto 20px;
-  }
-}
-
-.nav__toggle {
-  @include vp-1280 {
-    display: none;
   }
 }

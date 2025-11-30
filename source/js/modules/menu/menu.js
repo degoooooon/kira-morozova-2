@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const overlay = document.querySelector('.overlay');
   const links = document.querySelectorAll('.nav__link');
 
-  if (!toggle || !panel || !overlay) return;
+  if (!toggle || !panel || !overlay) {
+    return;
+  }
 
   // Определяем iOS
   const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -35,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   overlay.addEventListener('click', closeMenu);
 
-  links.forEach(link => {
+  links.forEach((link) => {
     link.addEventListener('click', closeMenu);
   });
 });
